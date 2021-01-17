@@ -1,0 +1,65 @@
+:root{
+    --color-background: hsl(257, 40%, 49%);
+    --color-background-hover: hsl(300, 69%, 71%);
+    --color-text: hsl(0, 0%, 100%);
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--color-background);
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat:no-repeat;
+    display: grid;
+    grid-template: 4rem 50rem/ 29.5rem;
+    height: 100vh;
+    align-content: center;
+    justify-content: center;
+}
+.header{
+    display: grid;
+    grid-area: 1/1;
+}
+.header-image{
+    display: flex;
+    align-items: center;
+    width: 12rem;
+}
+.main{
+    display: grid;
+    grid-area: 2/1;
+    grid-template-rows: 21rem 20rem;
+}
+.main-image{
+    margin: 0;
+    width: 29.5rem;
+    justify-content: center;
+}
+.container{
+    display: grid;
+    align-items: center;
+    grid-template-rows: 6.6rem 10rem;
+}
+.container-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2rem;
+    display: grid;
+    align-content: center;
+    color: var(--color-text);
+}
+.container-subtitle{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-text);
+    font-weight: 400;
+    font-size: 1.5rem;
+    display: ;
+    align-items: center;
+}

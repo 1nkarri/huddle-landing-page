@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Frontend Mentor - Huddle landing page with single introductory section
 
 ![Design preview for the Huddle landing page with single introductory section](./design/desktop-preview.jpg)
@@ -56,3 +57,7 @@ Feedback is always welcome, so if you have any to give on this challenge please 
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
+=======
+# huddle-landing-page
+Huddle landing page with a single introductory section
+>>>>>>> bc5c9f85467676cd480a08e81e6cd04b11487eb1

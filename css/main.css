@@ -11,46 +11,95 @@ html{
 *:before,
 *:after {
     box-sizing: inherit;
+}
+h1,p,a{
     margin: 0;
-    padding: 0;
 }
 body{
+    margin: 0;
+    padding: 0;
     background-color: var(--color-background);
     background-image: url(../images/bg-mobile.svg);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     display: grid;
-    grid-template: 4rem 50rem/ 29.5rem;
+    grid-template: 9rem 60rem 4rem/ 30rem;
     height: 100vh;
     align-content: center;
     justify-content: center;
 }
 .header{
-    display: grid;
     grid-area: 1/1;
+    margin-bottom: 6rem;
 }
-.header-image{
-    display: flex;
-    align-items: center;
-    width: 12rem;
+.header-container{
+    margin: 0;
+}
+.header-container-image{
+    height: 3.1rem;
 }
 .main{
-    display: grid;
     grid-area: 2/1;
-    grid-template-rows: 21rem 20rem;
+    display: grid;
+}
+.footer{
+    grid-area: 3/1;
+}
+.main-container{
+    display: grid;
 }
 .main-image{
+    height: 21.5rem;
+    display: flex;
+    margin-bottom: 5rem;
+}
+.main-title{
     margin: 0;
-    width: 29.5rem;
-    justify-content: center;
-}
-.container{
-    display: grid;
-    align-items: center;
-    grid-template-rows: 6.6rem 10rem;
-}
-.container-title{
     font-family: 'Poppins', sans-serif;
-    font-size: 2.2rem;
+    font-size: 2.3rem;
+    color: var(--color-text);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.main-subtitle{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.65rem;
+    color: var(--color-text);
+    text-align: center;
+}
+.main-button{
+    border: none;
+    border-radius: 2.5rem;
+    margin-top: 0;
+    color: var(--color-background);
+    font-family: 'Poppins', sans-serif;
+    font-size: 400;
+}
+@media (min-width: 376px) {
+    body{
+        background-image: url(../images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+    }
+}
+/*
+.main-title{
+    margin: 0;
+    grid-area: 2/1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.3rem;
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.footer{
+    grid-area: 3/1;
+    display: grid;
+} */
+/*
+.container-title{
     display: grid;
     align-content: center;
     color: var(--color-text);
@@ -62,4 +111,4 @@ body{
     font-size: 1.5rem;
     display: ;
     align-items: center;
-}
+} */
